@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		66478EF3222552C9004CFF08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66478EF2222552C9004CFF08 /* AppDelegate.swift */; };
-		66478EF5222552C9004CFF08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66478EF4222552C9004CFF08 /* ViewController.swift */; };
 		66478EF8222552C9004CFF08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66478EF6222552C9004CFF08 /* Main.storyboard */; };
 		66478EFA222552CA004CFF08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66478EF9222552CA004CFF08 /* Assets.xcassets */; };
 		66478EFD222552CA004CFF08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66478EFB222552CA004CFF08 /* LaunchScreen.storyboard */; };
+		66478F0622255322004CFF08 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66478F0522255322004CFF08 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		66478EEF222552C9004CFF08 /* StretchyHeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StretchyHeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66478EF2222552C9004CFF08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		66478EF4222552C9004CFF08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		66478EF7222552C9004CFF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66478EF9222552CA004CFF08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66478EFC222552CA004CFF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66478EFE222552CA004CFF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66478F0522255322004CFF08 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +39,8 @@
 			isa = PBXGroup;
 			children = (
 				66478EF1222552C9004CFF08 /* StretchyHeader */,
+				66478EF9222552CA004CFF08 /* Assets.xcassets */,
+				66478F04222552EA004CFF08 /* Other */,
 				66478EF0222552C9004CFF08 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,14 +56,20 @@
 		66478EF1222552C9004CFF08 /* StretchyHeader */ = {
 			isa = PBXGroup;
 			children = (
-				66478EF2222552C9004CFF08 /* AppDelegate.swift */,
-				66478EF4222552C9004CFF08 /* ViewController.swift */,
 				66478EF6222552C9004CFF08 /* Main.storyboard */,
-				66478EF9222552CA004CFF08 /* Assets.xcassets */,
-				66478EFB222552CA004CFF08 /* LaunchScreen.storyboard */,
-				66478EFE222552CA004CFF08 /* Info.plist */,
+				66478F0522255322004CFF08 /* TableViewController.swift */,
 			);
 			path = StretchyHeader;
+			sourceTree = "<group>";
+		};
+		66478F04222552EA004CFF08 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				66478EF2222552C9004CFF08 /* AppDelegate.swift */,
+				66478EFE222552CA004CFF08 /* Info.plist */,
+				66478EFB222552CA004CFF08 /* LaunchScreen.storyboard */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66478EF5222552C9004CFF08 /* ViewController.swift in Sources */,
+				66478F0622255322004CFF08 /* TableViewController.swift in Sources */,
 				66478EF3222552C9004CFF08 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,7 +292,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AJ997HVTPM;
-				INFOPLIST_FILE = StretchyHeader/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AJ997HVTPM;
-				INFOPLIST_FILE = StretchyHeader/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
